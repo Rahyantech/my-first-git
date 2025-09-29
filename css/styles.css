@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.black-box {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(85, 81, 89);
+    position: relative;
+    
+}
+
+.red-carr {
+    width: 40px;
+    height: 40px;
+    background-color: red
+    
+
+
+}
+
+.flex {
+    display: flex;
+    
+
+}
+
+.shapes {
+    background-color: antiquewhite;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.shape {
+
+height: 20px;
+width: 20px;
+
+}
+
+.violet-carr {
+    background-color: blue;
+
+}
+
+
+.rose-circl {
+    background-color: pink;
+    border-radius: 50%;
+
+}
+
+
+.yellow-carr {
+    background-color: yellow;
+
+}
+
+
+.green-circl {
+    background-color: green;
+    border-radius: 50%;
+
+
+}
+
+.boite-bleu {
+   background-color: blueviolet;
+   height: 50px;
+   width: 50px;
+   justify-content: center;
+   border-radius: 50%;
+   transition: 0,1s;
+
+}
+
+.boite-bleu:hover {
+   transform: translateY(30px);
+}
