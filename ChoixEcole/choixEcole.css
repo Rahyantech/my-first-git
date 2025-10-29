@@ -1,0 +1,20 @@
+body
+{
+    background: url(/Projet/ImageResidentEvil/Extérieur.png) no-repeat top;
+    font-family: "Road Rage", sans-serif;
+}
+
+.bouton
+{
+    height: 100px !important;
+    width: 300px !important;
+}
+
+.heisenbergHouse
+{
+    position:absolute; 
+    top: 41%;
+    left: 61%;
+    color: rgba(214, 191, 0, 0.8);
+}
+
