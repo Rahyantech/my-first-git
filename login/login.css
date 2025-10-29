@@ -1,0 +1,66 @@
+body { 
+    background: url('Resident-Evil-Villagehomme.jpg');
+    font-family: 'Times New Roman', Times, serif;  
+    background-size: cover;
+}
+
+.encadrement{
+    top: 35%;
+    width: 27%;
+}
+
+h1{
+    color: rgb(43, 4, 4);
+    top: 50%;
+    font-family: 'Nosifer', serif;
+    text-shadow: 2px 2px 5px black;
+    left: 48%;
+    font-size: 30px;
+}
+
+.login-label {
+    color: rgb(43, 4, 4);
+    top: 55%;
+    left: 45%;
+    text-shadow: 2px 2px 5px black;
+    font-size:15px;
+}
+.login-label1 {
+    color: rgb(43, 4, 4);
+    top: 62%;
+    left: 45%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 15px;
+}
+
+.login-input {
+    background-color: rgba(48, 48, 48, 0.5); 
+    color: rgb(253, 0, 0); 
+    top: 57%;
+    width: 10%;
+    left: 45%;
+}
+
+.login-input1 {
+    background-color: rgba(48, 48, 48, 0.5);  
+    color: rgb(253, 0, 0); 
+    top: 64%;
+    width: 10%;
+    left: 45%;
+}
+
+.login-btn {
+    background-color: #970303; 
+    font-family: 'Creepster', cursive;
+    top: 70%;
+    left: 47.5%;
+    color: black;
+    font-family: 'Nosifer', serif;;
+    font-size: 12px;
+}
+
+.retour{
+    background-color: crimson;
+}
+
+
