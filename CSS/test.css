@@ -1,0 +1,658 @@
+/* Page d'accueil */
+
+main {
+    overflow: hidden;
+}
+
+.accueil{
+    background: url(../ImageResidentEvil/Resident-Evil-Villagehomme.jpg);
+    background-size: cover;
+}
+
+.marginTop
+{
+    margin-top: 400px;
+}
+
+.logoAccueil
+{
+    height: 250px;
+    width: 250px;
+    margin-top: -60px;
+}
+
+.boutonEntrer
+{
+    height: 300px;
+    width: 500px;
+    margin-top: -60px;
+    margin-bottom: -80px;
+}
+
+.titreAccueilH1
+{
+    color: #fffefe88; 
+    font-size: 3em;
+    font-family: 'Impact', fantasy;
+    text-shadow: 
+        -1.8px 0px 0 #000000, 
+        2px -2px 0 #000, 
+        3px 3px 0 #000, 
+        5px 5px 0 #050505,
+        0 0 15px rgba(255, 150, 150, 0.7); 
+}
+
+.boutonEntrer:hover {
+    transform: scale(1.03);
+}
+
+
+/* Page de Connexion */
+
+/*Pade d'Inscription */
+
+.encadrement{
+    width: 750px;
+    height: 750px;
+    margin-bottom: -480px;
+    margin-top: -100px;
+}
+
+.marginInput
+{
+    margin-left: 90px;
+    color:red
+}
+
+.marginInputAge
+{
+    margin-left: 230px;
+    color: red;
+}
+
+.marginInputBouton
+{
+    margin-left: 260px;
+    color: red;
+}
+
+.tailleInputOne
+{
+    padding-left: 0px;
+}
+.tailleInputTwo
+{
+    padding-right: 250px;
+}
+
+.tailleInputFour
+{
+    padding-right: 195px;
+}
+.marginTopInscription
+{
+    margin-top: 220px;
+
+}
+
+/* Page de Restauration */
+
+.bodyRestauration
+{   
+    background:  linear-gradient(174deg,rgba(0, 0, 0, 1) 18%, rgba(110, 0, 0, 1) 81%); 
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texteTitre
+{
+    font-size: 5em;
+}
+.texteParagraphe
+{
+    font-size: 3.5em;
+}
+
+.imageRestauration {
+    width: 800px;
+    transition: 1s;
+    position: relative;
+}  
+
+.image-zoom
+{
+    overflow: hidden;
+} 
+
+.imageTaillePremier:hover
+{
+    transform: scale(1.5) translate(70px,70px);
+}
+
+.imageTailleDeuxieme:hover
+{
+    transform: scale(1.5) translate(10px,-80px);
+}
+
+.imageTailleTroisieme:hover
+{
+    transform: scale(1.5) translate(0,0);
+}
+
+.imageTailleQuatrieme:hover
+{
+    transform: scale(1.5) translate(80px,0);
+}
+
+.imageTailleSixieme:hover
+{
+    transform: scale(1.3) translate(20px,40px);
+}
+
+        /* Cadre Néon Apocalyptique */
+        .frame-neon {
+            border: 6px solid #ff0000;
+            background: linear-gradient(145deg, #1603032d 0%, #1a0f08 100%);
+            padding: 30px;
+            box-shadow: 
+                0 0 10px #ff0000,
+                0 0 20px #ff0000,
+                0 0 30px #ff0000,
+                inset 0 0 20px rgba(0, 255, 21, 0.2),
+                inset 0 0 40px rgba(0, 0, 0, 0.8);
+            animation: neon-flicker 3s infinite alternate;
+            position: relative;
+            border-radius: 15px;
+        }
+        
+        @keyframes neon-flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                box-shadow: 
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000,
+                    0 0 30px #ff0000,
+                    inset 0 0 20px rgba(255, 0, 0, 0.2),
+                    inset 0 0 40px rgba(0, 0, 0, 0.8);
+                border-color: #ff0000;
+            }
+            20%, 24%, 55% {
+                box-shadow: 
+                    0 0 5px #ff0000,
+                    inset 0 0 40px rgba(0, 0, 0, 0.8);
+                border-color: #cc0000;
+            }
+        }
+        
+        /* Coins lumineux */
+        .corner-glow {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ff0000;
+            box-shadow: 0 0 20px #ff0000;
+            animation: corner-pulse 2s infinite;
+            border-radius: 50%;
+        }
+        
+        .corner-glow.top-left { top: -3px; left: -3px; }
+        .corner-glow.top-right { top: -3px; right: -3px; }
+        .corner-glow.bottom-left { bottom: -3px; left: -3px; }
+        .corner-glow.bottom-right { bottom: -3px; right: -3px; }
+        
+        @keyframes corner-pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+        }
+        
+/* Page de Tableaux */ 
+
+.bodyTableaux
+{
+    background: 
+    url('../ImageResidentEvil/FoetusTableaux.jpg') no-repeat;
+    background-size: cover;
+    font-family: "Road Rage", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.titre
+{
+  font-family: "Jolly Lodger", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8em;
+  color: rgb(81, 83, 85);
+}
+
+.titreHeader
+{
+    background: linear-gradient(rgb(73, 70, 70),gray);
+}
+
+.borderID 
+{
+  border-radius: 15px 0 0 0 ;
+}
+
+.borderEcole
+{
+  border-radius: 0 15px 0 0;
+}
+
+/* NAV  */
+
+/* --- Configuration du Body (Fond du Château) --- */
+.navbar.main-navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-bottom: 2px solid #440000;
+}
+
+.navbar-logo {
+    width: 90px; 
+    height: 80px;
+}
+
+.navbarMargeLogo
+{
+    margin-left: 600px;
+}
+
+.navbar-title {
+    color: var(--couleur-lueur) !important;
+    font-family: "Eater", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(145, 49, 49, 0.8); 
+}
+
+.bar_Nav{
+   background-color: #640000;
+   height: 60px;
+   width: 2px;
+}
+
+.navbar-centre-links {
+    height: 50px;
+}
+
+.mystery-box {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    background-image: url('../img page de choix/unnamed-removebg-preview (7).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent; 
+}
+
+.box-text {
+    color: var(--couleur-lueur);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-shadow: 0 0 5px rgb(71, 3, 3);
+}
+
+.mystery-box:hover .box-text {
+    color: rgb(255, 255, 255);
+}
+
+.nav-button {
+    padding: 10px 30px;
+    margin-right:600px ;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f0e6d2 !important; 
+    background-color: #380000 !important; 
+    border: 1px solid #7c0000 !important; 
+}
+
+.nav-button:hover {
+    background-color: #550000 !important; 
+    border-color: #ff0000 !important;
+    color: white !important;
+}
+
+/* Inscription Enfant */
+
+.bodyInscriptionEnfant {
+    background: linear-gradient(to bottom, #a7a6a6 0%, #505050 0%, #000000 70%);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+
+.container {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  max-width: 100% !important;
+  position: relative;
+  z-index: 1;
+}
+
+.road-rage-regular {
+    font-family: "Road Rage", sans-serif;
+    font-style: normal;
+    text-shadow: 4px 4px 6px rgb(0, 0, 0);
+    -webkit-text-stroke: 0.5px black;
+}
+
+.taille {
+    font-size: 35px;
+}
+
+.darkRed {
+    color: rgb(119, 11, 11);
+}
+
+.red {
+    color: rgb(197, 20, 20);
+}
+
+.grey {
+    color: rgb(68, 68, 68);
+    transition: color 0.8s ease;  
+}
+
+.grey:hover {
+    color: rgb(197, 20, 20);
+}
+
+input.form-control {
+    background: linear-gradient(to right, #ffffff, #6d6d6d);
+    border: none;
+    
+}
+
+.btn-image {
+  background-image: url(../ImageResidentEvil/file_000000006754620db03eb2767964543f.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  color: transparent;
+  font-size: 0;
+  border: none;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.inputInscription
+{
+    width: 500px;
+}
+
+/* page Prof */
+
+/* --- 5) Info profs ---*/
+
+.bodyProf {
+    background: linear-gradient(to bottom, #000000 20%, #414141 80%);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.bodyProf::after {
+  content: "";
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../ressources/texture.png');
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.directeurImage {
+  margin-left: 20px;
+  width: 450px;
+  height: 350px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.road-rage-regular {
+  font-family: "Road Rage", sans-serif;
+  font-style: normal;
+  text-shadow: 4px 4px 6px rgb(0, 0, 0);
+  -webkit-text-stroke: 0.5px black;
+}
+
+.darkRed {
+  color: rgb(119, 11, 11);
+}
+
+.red {
+  color: rgb(197, 20, 20);
+}
+
+.fontSize {
+  font-size: 60px;
+}
+
+.paragraphSize {
+  font-size: 45px;
+}
+
+.rectangle {
+  background: linear-gradient(to bottom, black 20%, rgb(145, 8, 8) 80%);
+}
+
+/*Page de choix d'ecole */
+
+.bodyChoixEcole
+{
+    background: url(../ImageResidentEvil/Extérieur.png) no-repeat top;
+    font-family: "Road Rage", sans-serif;
+}
+
+.bouton
+{
+    height: 100px !important;
+    width: 300px !important;
+}
+
+.heisenbergHouse
+{
+    position:absolute; 
+    top: 41%;
+    left: 61%;
+    color: rgba(214, 191, 0, 0.8);
+}
+
+/* Page d'index*/
+
+.bodyIndex {
+    background-image: url('../ImageResidentEvil/evilVillageMaison.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #333; 
+}
+
+.bebe_pendu {
+    bottom: 52.5%;
+}
+
+.lady {
+    width: 300px; 
+    height: 500px; 
+    right: 15%;
+    bottom: 3%;
+}
+
+.fleche-gauche {
+    transform: rotate(25deg);
+}
+.fleche-haut {
+    transform: rotate(115deg);
+}
+.fleche-droit {
+    transform: rotate(205deg);
+}
+.fleche-bas{
+    transform: rotate(295deg);
+}
+
+@keyframes apparition-bulle {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.text-bulle {
+    right: 28%;
+    top: 35%;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: 2px solid #999;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 0; 
+    animation-name: apparition-bulle;
+    animation-duration: 0.5s; 
+    animation-delay: 1.5s; 
+    animation-fill-mode: forwards;
+}
+
+.action-text {
+    color: #640000;
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.textHover:hover {
+    transform: scale(1.2); 
+    z-index: 10; 
+}
+
+.text-enfant {
+    left: 31%; 
+    bottom: 10%;
+    transition: transform 0.3s ease-in-out;
+}
+.text-prof {
+    left: 58%; 
+    bottom: 9%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.text-restauration {
+    left:47%;
+    bottom: 1%; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-inscription{
+    transition: transform 0.3s ease-in-out;
+    z-index: 10; 
+}
+
+.Bebe{
+     top: 77%;
+     width: 250px;
+     transform: rotate(65deg);
+     left: 18%;
+}
+
+.container_F{
+ height: 150px; 
+ padding: 20px;
+ margin-bottom: 0;
+ height: auto !important;
+ margin-top: auto;
+}
+
+.container_fleche_haut{
+    margin-bottom: -100px;
+}
+
+
+/* Test index */
+
+.marginTopIndex
+{
+  margin-top: 360px ;
+}
+
+.imageFleche
+{
+  width: 100px;
+}
+
+.decalageGauche
+{
+  margin-top: 12px ;
+  margin-left: 10px;
+}
+
+.decalageDroite
+{
+  margin-top: -10px ;
+  margin-right: 10px;
+}
+
+.decalageHaut
+{
+  margin-right: 60px;
+}
+
+.decalageHautTexte
+{
+  margin-bottom: 50px;
+}
+
+.decalageBas
+{
+  margin-left: 45px;
+}
+
+.decalageBasTexte
+{
+  margin-left: 40px;
+  padding-top: 60px;
+}
+
+.couleur_rouge_dark {
+    color: #8B0000 !important;
+}
+
+.couleur_gris_clair {
+    color: #adb5bd !important;
+}
