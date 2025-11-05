@@ -1,0 +1,78 @@
+
+    :root {
+      /* Réglages par défaut – modifiez selon vos besoins */
+      --snow-density: 0.00022; /* flocons par pixel (≈ 0.00018–0.0003) */
+      --snow-wind: 0.9;        /* 0 = sans vent, 1 = vent standard, >1 = plus fort */
+      --snow-speed: 1.0;       /* vitesse globale */
+    }
+
+    /* Démo de contenu derrière la neige */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      height: 100svh; /* meilleure prise en charge mobile */
+      padding: 4rem 1.25rem;
+      isolation: isolate; /* assure une pile de contexte propre */
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 4vw + 1rem, 5rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin: 0 0 0.5rem;
+    }
+
+    .hero p { opacity: 0.8; max-width: 60ch; }
+
+    /* Le canvas neige : au-dessus du contenu, non cliquable */
+    #snow-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0; /* devant le site */
+      /* Légère transparence pour mieux fondre avec les fonds sombres */
+    }
+
+    /* Panneau de réglages (facultatif) */
+    .controls {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 1100;
+      background: rgba(10, 10, 16, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 0.75rem 0.9rem;
+      display: grid;
+      gap: 0.5rem;
+      font-size: 12px;
+      color: #d8d8de;
+    }
+    .controls label { display: grid; grid-template-columns: 1fr auto; gap: 0.5rem; align-items: center; }
+    .controls input[type="range"] { width: 160px; }
+    .controls button {
+      all: unset;
+      cursor: pointer;
+      padding: 0.45rem 0.75rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+    }
+
+    /* Accessibilité : si l’utilisateur préfère réduire les animations, on stoppe l’animation */
+    @media (prefers-reduced-motion: reduce) {
+      #snow-canvas { display: none; }
+      .controls { display: none; }
+    }
+  
